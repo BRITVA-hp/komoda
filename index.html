@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komoda</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="slick/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <div class="row">
+    <nav class="transparent z-depth-0">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img src="img/logo/logo-header.png" alt=""></a>
+        <ul class="nav-collapse">
+          <li><a class="nav__company" href="#company">О компании</a></li>
+          <li><a class="nav__advantages" href="#advantages">Преимущества</a></li>
+          <li><a class="nav__catalog" href="#catalog">Каталог</a></li>
+          <li><a class="nav__order" href="#order">Как заказать</a></li>
+          <li><a class="nav__comments" href="#comments">Отзывы</a></li>
+          <li><a class="nav__contacts" href="#contacts">Контакты</a></li>
+        </ul>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger toggle right"><i class="material-icons teal-text">menu</i></a>
+        <a href="tel:+7 (495) 664-57-37" class="link-tel text-white">Звоните:   <b>+7 (495) 664-57-37</b></a>
+        <a class="nav__phone" href="tel:+7 (495) 664-57-37"><img src="img/phone.png" alt="phone"></a>
+      </div>
+    </nav>
+  </div>
+
+
+  <ul class="sidenav sidenav-close" id="mobile-demo">
+    <li><a class="sidenav__company" href="#company">О компании</a></li>
+    <li><a class="sidenav__advantages" href="#advantages">Преимущества</a></li>
+    <li><a class="sidenav__catalog" href="#catalog">Каталог</a></li>
+    <li><a class="sidenav__order" href="#order">Как заказать</a></li>
+    <li><a class="sidenav__comments" href="#comments">Отзывы</a></li>
+    <li><a class="sidenav__contacts" href="#contacts">Контакты</a></li>
+  </ul>
+  
+  <div class="top-section--big">
+    <div class="container-center">
+      <section class="top-section">
+        <div>
+          <h1 class="title title_big">Производство<br> шкафов купе<br> на заказ</h1>
+          <h2 class="title title_subtitle text-green">Вызов замерщика бесплатно</h2>
+          <form action="#">
+            <input type="text" placeholder="Ваше имя">
+            <input type="tel" placeholder="Ваш телефон">
+            <button class="btn btn_green">Вызвать замерщика</button>
+          </form>
+        </div>
+        <img src="img/cupboard.png" alt="" class="top-section__img">
+        <div class="top-section__square">
+  
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container-center_big">
+    <section id="company" class="about">
+      <img src="img/about/room.jpg" alt="">
+      <div>
+        <h3 class="title title_medium">О компании</h3>
+        <p>Сегодня Большинство современных потребителей, особо ценят в интерьере комфорт и функциональность в сочетании с приятным дизайном. И именно встраиваемый шкаф-купе стал фаворитом на современном мебельном рынке, благодаря современному виду, повышенной вместительности, способности сэкономить пространство и полностью заменить отдельное гардеробное помещение. У нас можно заказать встраиваемый шкаф - наша компания mykupe много лет изготавливает встраиваемые шкафы, а наши специалисты приобрели навык с полуслова понимать своих заказчиков.</p>
+      </div>
+    </section>
+  </div>
+  <div class="container-center">
+    <section id="advantages" class="advantage">
+      <h3 class="title title_medium">Наши преимущества</h3>
+      <div>
+        <img src="img/ico/offers/1.svg" alt="">
+        <p>Наши шкафы и двери живут больше 10 лет</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/2.svg" alt="">
+        <p>Изготовление от 5 до 10 дней</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/3.svg" alt="">
+        <p>Бесплатно собираем шкафы и двери-купе</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/4.svg" alt="">
+        <p>Более 356 вариантов отделки</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/5.svg" alt="">
+        <p>Бесплатная доставка по Москве и области</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/6.svg" alt="">
+        <p>Самые низкие цены на рынке</p>
+      </div>
+    </section>
+  </div>
+  <div class="container-center">
+    <section class="we-can">
+      <div class="we-can__left-block">
+        <h2 class="title title_medium">Что мы можем</h2>
+        <img class="we-can__img" src="img/may/room.png" alt="">
+      </div>
+      <div class="we-can__main">
+        <div class="we-can__border-bot">
+          <img src="img/may/catalog/1.png" alt="">
+          <p>Встроенные шкафы-купе</p>
+        </div>
+        <div class="we-can__border-bot">
+          <img src="img/may/catalog/2.png" alt="">
+          <p>Корпусные шкафы-купе</p>
+        </div>
+        <div class="we-can__border-bot">
+          <img src="img/may/catalog/3.png" alt="">
+          <p>Распашные</p>
+        </div>
+        <div class="we-can__border-bot">
+          <img src="img/may/catalog/4.png" alt="">
+          <p>Двери купе</p>
+        </div>
+        <div class="we-can__border-right">
+          <img src="img/may/catalog/5.png" alt="">
+          <p>Гардеробные</p>
+        </div>
+        <div class="we-can__border-right">
+          <img src="img/may/catalog/6.png" alt="">
+          <p>Угловые</p>
+        </div>
+        <div class="we-can__border-right">
+          <img src="img/may/catalog/7.png" alt="">
+          <p>Стенки-купе</p>
+        </div>
+        <div class="we-can__border-right">
+          <img src="img/may/catalog/8.png" alt="">
+          <p>Шкафы-купе</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container-center_big">
+    <section class="quiz-block">
+      <div class="quiz-block__main">
+        <div>
+          <h2 class="title title_medium">Рассчитай стоимость шкафа <span>+ ПОДАРОК</span></h2>
+          <p class="quiz-block__text">Пройдите тест и получите расчетную стоимость и один <br> из 3х подарков на выбор</p>
+        </div>
+        <div class="quiz-block__main__inner">
+          <div class="quiz-block__box">
+            <img src="img/quiz-section/present.png" alt="">
+            <p>подарок для <br> мебели</p>
+          </div>
+          <div class="quiz-block__box">
+            <p class="quiz-block__box__text-red">
+              30% <br>
+              <span>скидка</span>
+            </p>
+          </div>
+          <div class="quiz-block__box quiz-block__box--last">
+            <img src="img/quiz-section/mirror.png" alt="mirror">
+            <p>зеркало</p>
+          </div>
+        </div>
+        <div class="quiz-block__main__link-quiz-container">
+          <a href="quiz.html" class="link-quiz">Подобрать свой шкаф купе</a>
+          <div>
+            <p class="discription-link-quiz text-grey">
+              Дарим подарок<br>
+              за прохождение теста
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-block__desktop-column">
+        <div class="quiz-block__desktop-column__green-container">
+          <img src="img/cupboard.png" alt="cupboard">
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container-center">
+    <section id="order" class="order">
+      <h3 class="title title_medium">Как заказать шкаф</h3>
+      <div>
+        <img src="img/ico/offers/1.svg" alt="">
+        <p class="order__card-text">Позвоните нам и оставьте заяку</p>
+        <p class="order__step">шаг 1</p>
+      </div>
+      <div class="">
+        <img src="img/ico/offers/2.svg" alt="">
+        <p class="order__card-text">К вам приедет наш специалист</p>
+        <p class="order__step">шаг 2</p>
+      </div>
+      <div class="order__card--3">
+        <img src="img/ico/offers/3.svg" alt="">
+        <p class="order__card-text">Сделаем замеры и подпишем договор</p>
+        <p class="order__step">шаг 3</p>
+      </div>
+      <div class="">
+        <img  src="img/ico/offers/4.svg" alt="">
+        <p class="order__card-text">Изготовим за 5 — 10 дней</p>
+        <p class="order__step">шаг 4</p>
+      </div>
+      <div>
+        <img src="img/ico/offers/5.svg" alt="">
+        <p class="order__card-text">Доставим и бесплатно соберем</p>
+        <p class="order__step">шаг 5</p>
+      </div>
+    </section>
+  </div>
+
+  <section id="comments" class="section comments">
+    <h3 class="comments__title title title_medium">Отзывы наших клиентов</h3>
+    <!-- /.title title_medium -->
+
+    <div class="comments__container">
+      <div class="comments__row comments__row--desc">
+
+        <div class="comments__card">
+          <div class="comments__img">
+            <div class="comments__before">
+              <a data-fancybox="gallery" href="img/comments/video.jpg"><img src="img/comments/video.jpg" alt="comment"></a>
+              <div class="comments__border"></div>
+            </div>
+          </div>
+          <div class="comments__card-block">
+            <div class="comments__card-icon"><img src="img/comments/Artur.png" alt="Artur"></div>
+            <div class="comments__card-wrap">
+              <div class="comments__card-play"><img src="img/comments/play.png" alt="play"></div>
+              <p class="comments__card-name">Артур Королёв <span>13.10.2020</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- /.comments__card -->
+        <div class="comments__card">
+          <div class="comments__img">
+            <div class="comments__before">
+              <a data-fancybox="gallery" href="video/comments.mp4"><img src="img/comments/video1.jpg" alt="comment"></a>
+              <div class="comments__border"></div>
+            </div>
+          </div>
+          <div class="comments__card-block">
+            <div class="comments__card-icon"><img src="img/comments/Mari.png" alt="Mari"></div>
+            <div class="comments__card-wrap">
+              <div class="comments__card-play"><img src="img/comments/play.png" alt="play"></div>
+              <p class="comments__card-name">Марьяна Соловьёва<span>13.10.2020</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- /.comments__card -->
+        <div class="comments__card">
+          <div class="comments__img">
+            <div class="comments__before">
+              <a data-fancybox="gallery" href="video/comments2.mp4"><img src="img/comments/video2.jpg" alt="comment"></a>
+              <div class="comments__border"></div>
+            </div>
+          </div>
+          <div class="comments__card-block">
+            <div class="comments__card-icon"><img src="img/comments/Stas.png" alt="Stas"></div>
+            <div class="comments__card-wrap">
+              <div class="comments__card-play"><img src="img/comments/play.png" alt="play"></div>
+              <p class="comments__card-name">Стася Лебедева<span>13.10.2020</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- /.comments__card -->
+      </div>
+
+      <!-- slider in mobile -->
+      <div class="comments__row comments__slider">
+        <div class="comments__card">
+          <div class="comments__img">
+            <div class="comments__before">
+              <a data-fancybox="gallery1" href="img/comments/video.jpg"><img src="img/comments/video.jpg" alt="comment"></a>
+            </div>
+          </div>
+          <div class="comments__card-block">
+            <div class="comments__card-icon"><img src="img/comments/Artur.png" alt="Artur"></div>
+            <div class="comments__card-wrap">
+              <div class="comments__card-play"><img src="img/comments/play.png" alt="play"></div>
+              <p class="comments__card-name">Артур Королёв <span>13.10.2020</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- /.comments__card -->
+        <div class="comments__card">
+          <div class="comments__img">
+            <div class="comments__before">
+              <a data-fancybox="gallery1" href="video/comments.mp4"><img src="img/comments/video1.jpg" alt="comment"></a>
+            </div>
+          </div>
+          <div class="comments__card-block">
+            <div class="comments__card-icon"><img src="img/comments/Mari.png" alt="Mari"></div>
+            <div class="comments__card-wrap">
+              <div class="comments__card-play"><img src="img/comments/play.png" alt="play"></div>
+              <p class="comments__card-name">Марьяна Соловьёва<span>13.10.2020</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- /.comments__card -->
+        <div class="comments__card">
+          <div class="comments__img">
+            <div class="comments__before">
+              <a data-fancybox="gallery1" href="img/comments/video2.jpg"><img src="img/comments/video2.jpg" alt="comment"></a>
+            </div>
+          </div>
+          <div class="comments__card-block">
+            <div class="comments__card-icon"><img src="img/comments/Stas.png" alt="Stas"></div>
+            <div class="comments__card-wrap">
+              <div class="comments__card-play"><img src="img/comments/play.png" alt="play"></div>
+              <p class="comments__card-name">Стася Лебедева<span>13.10.2020</span></p>
+            </div>
+          </div>
+        </div>
+        <!-- /.comments__card -->
+      </div>
+      <div class="cert__counter comments__counter">
+        <p class="cert__counter-text"><span class="cert__counter-current">1</span>/<span class="cert__counter-all">лол</span></p>
+      </div>
+    </div>
+  </section>
+  <!-- /.section comments -->
+
+  <section id="catalog" class="catalog bg-green">
+    <div class="catalog__discription">
+      <h2 class="title title_medium text-white">
+        Получить каталог наших работ
+      </h2>
+      <p class="catalog__text text-white">
+        Наш специалист отправит Вам на указанный мессенджер наш полный каталог  и пришлет информацию по всем действующим акциям
+      </p>
+    </div>
+    <div class="container-form">
+      <div class="messengers-container">
+        <p class="catalog__choice text-white">Выберите мессегджер на который вам прислать каталог</p>
+        <a target="_blank" href="https://wapp.click/79959667441" class="link-messanger">
+          <svg class="massenger" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.365 0.0163514C5.44127 0.342014 -0.020803 6.06064 5.95641e-05 12.9347C0.00348962 14.9581 0.488403 16.9517 1.4148 18.751L0.035265 25.3959C0.0184328 25.4789 0.0228403 25.5649 0.0480796 25.6458C0.0733189 25.7268 0.118575 25.8 0.179664 25.8589C0.240752 25.9177 0.315701 25.9602 0.397579 25.9824C0.479457 26.0046 0.56562 26.0058 0.648102 25.986L7.21198 24.4436C8.95045 25.3019 10.8589 25.7612 12.7979 25.788C19.8742 25.8961 25.7731 20.3233 25.9935 13.3086C26.2308 5.78578 19.9733 -0.344483 12.365 0.0150485V0.0163514ZM20.1976 20.0342C19.2516 20.9759 18.1289 21.7218 16.8938 22.2292C15.6587 22.7367 14.3355 22.9956 13 22.9912C11.4288 22.996 9.87805 22.6356 8.47025 21.9386L7.55621 21.4866L3.53104 22.4323L4.37858 18.3537L3.92743 17.4784C3.19607 16.062 2.81681 14.4906 2.82172 12.8969C2.82172 10.2005 3.88049 7.6642 5.80245 5.75843C7.71815 3.86399 10.3045 2.80095 13 2.80011C15.72 2.80011 18.2756 3.85005 20.1976 5.75713C21.1445 6.68935 21.8959 7.80078 22.4079 9.02647C22.92 10.2522 23.1823 11.5675 23.1796 12.8956C23.1796 15.5687 22.1039 18.1453 20.1976 20.0355V20.0342Z" />
+            <path d="M19.2974 16.3793L16.6937 15.6336C16.5257 15.5851 16.3478 15.5829 16.1787 15.6273C16.0095 15.6716 15.8554 15.7609 15.7323 15.8858L15.0959 16.5338C14.9642 16.6679 14.7961 16.76 14.6127 16.7986C14.4292 16.8372 14.2385 16.8205 14.0644 16.7507C12.8334 16.2532 10.2418 13.9538 9.57978 12.8027C9.48697 12.6402 9.44457 12.4534 9.45803 12.2665C9.47148 12.0795 9.54017 11.9008 9.65528 11.7534L10.2108 11.0348C10.3178 10.8971 10.3854 10.7328 10.4066 10.5594C10.4277 10.386 10.4015 10.2101 10.3308 10.0505L9.23594 7.57762C9.17402 7.4394 9.08106 7.3175 8.96436 7.22152C8.84767 7.12553 8.71042 7.05807 8.56341 7.02443C8.4164 6.9908 8.26364 6.9919 8.11713 7.02767C7.97061 7.06343 7.83435 7.13287 7.71904 7.23054C6.99228 7.8447 6.12933 8.77611 6.0255 9.81056C5.84078 11.6314 6.62282 13.9267 9.58112 16.6843C12.9992 19.869 15.7377 20.2906 17.5189 19.8581C18.5302 19.6141 19.3392 18.6339 19.8475 17.8326C19.9288 17.7054 19.9793 17.5607 19.9948 17.4102C20.0104 17.2598 19.9906 17.1078 19.9371 16.9664C19.8836 16.825 19.7979 16.6983 19.6867 16.5963C19.5756 16.4943 19.4423 16.42 19.2974 16.3793Z" />
+          </svg>
+        <a target="_blank" href="https://t.me/KomoDa_mebel" class="link-messanger">
+          <svg class="massenger" width="31" height="26" viewBox="0 0 31 26" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.9972 0.575718L1.40215 10.8312C-0.412846 11.5602 -0.402346 12.5727 1.06915 13.0242L7.89715 15.1542L23.6952 5.18672C24.4422 4.73222 25.1247 4.97672 24.5637 5.47472L11.7642 17.0262H11.7612L11.7642 17.0277L11.2932 24.0657C11.9832 24.0657 12.2877 23.7492 12.6747 23.3757L15.9912 20.1507L22.8897 25.2462C24.1617 25.9467 25.0752 25.5867 25.3917 24.0687L29.9202 2.72672C30.3837 0.868219 29.2107 0.0267184 27.9972 0.575718Z"/>
+          </svg>
+        </a>
+        <a target="_blank" href="https://viber.click/79959667441" class="link-messanger">
+          <svg class="massenger" width="28" height="29" viewBox="0 0 28 29" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6624 0.5C11.5249 0.5 6.23741 0.725 3.42491 3.425C1.39991 5.3375 0.61241 8.2625 0.49991 11.75C0.27491 17.2625 1.51241 20.75 3.53741 22.55C3.98741 22.8875 5.11241 23.7875 7.24991 24.4625V27.275C7.24991 27.275 7.24991 28.4 7.92491 28.625C8.03741 28.625 8.14991 28.7375 8.26241 28.7375C8.93741 28.7375 9.49991 27.95 10.2874 27.1625C10.9624 26.375 11.5249 25.8125 11.8624 25.25H14.3374C16.4749 25.25 21.7624 25.025 24.5749 22.325C26.5999 20.3 27.3874 17.375 27.3874 13.6625C27.4999 13.1 27.4999 12.425 27.4999 11.75C27.3874 7.5875 26.1499 4.775 24.4624 3.2C23.7874 2.6375 20.8624 0.5 14.5624 0.5H13.6624ZM13.4374 2.6375H14.4499C20.4124 2.6375 22.6624 4.55 22.8874 4.775C24.2374 5.9 25.0249 8.375 25.1374 11.6375V12.0875C25.2499 12.7625 25.2499 13.325 25.2499 13.6625C25.1374 17.0375 24.4624 19.2875 23.1124 20.75C20.7499 22.8875 15.7999 23 14.4499 23H12.3124L10.5124 25.025L9.38741 26.2625L9.16241 26.6C8.93741 26.825 8.59991 27.275 8.37491 27.3875V22.325C6.12491 21.7625 5.22491 20.975 4.99991 20.75C3.42491 19.4 2.52491 16.1375 2.74991 11.75V10.625C2.97491 7.925 3.64991 6.125 4.77491 4.8875C7.13741 2.75 12.0874 2.6375 13.4374 2.6375ZM13.3249 5.1125C12.7624 5.1125 12.7624 5.9 13.3249 5.9C17.4874 5.9 21.0874 8.7125 21.0874 14C21.0874 14.5625 21.8749 14.5625 21.8749 14C21.8749 8.2625 18.0499 5 13.3249 5.1125ZM8.86654 6.15312C8.61163 6.12258 8.35488 6.19282 8.15103 6.34888C7.02603 6.91138 5.89991 8.03862 6.23741 9.27612C6.23741 9.27612 6.46241 10.2875 7.69991 12.425C8.37491 13.4375 8.93741 14.3375 9.49991 15.0125C10.0624 15.8 10.9624 16.7 11.8624 17.375C13.6624 18.8375 16.4749 20.3 17.7124 20.6375C18.8374 20.975 20.0749 19.85 20.6374 18.725C20.8624 18.275 20.7499 17.7125 20.2999 17.375C19.6249 16.7 18.4999 15.9125 17.7124 15.4625C17.1499 15.125 16.4749 15.35 16.2499 15.6875L15.6874 16.3625C15.4624 16.7 14.8999 16.7 14.8999 16.7C11.1874 15.6875 10.1749 11.8625 10.1749 11.8625C10.1749 11.8625 10.1749 11.4125 10.5124 11.075L11.1874 10.5125C11.5249 10.2875 11.7499 9.6125 11.4124 9.05C11.1874 8.7125 10.8499 8.0375 10.5124 7.7C10.1749 7.25 9.49991 6.4625 9.49991 6.4625C9.32923 6.29158 9.10627 6.18268 8.86654 6.15312ZM14.1124 7.3625C13.5499 7.25 13.4374 8.15 13.9999 8.15C17.1499 8.375 18.9499 10.5125 18.8374 13.2125C18.7249 13.775 19.6249 13.775 19.6249 13.2125C19.7374 10.0625 17.7124 7.475 14.1124 7.3625ZM14.4499 9.5C13.8874 9.3875 13.8874 10.2875 14.4499 10.2875C15.7999 10.2875 16.4749 11.075 16.4749 12.425C16.5874 12.9875 17.3749 12.9875 17.3749 12.425C17.2624 10.625 16.2499 9.5 14.4499 9.5Z"/>
+          </svg>
+        </a>
+      </div>
+      <form action="#" class="catalog__form">
+        <input class="catalog__tel" type="tel" placeholder="+7 (___) ___ - __ - __">
+        <button class="btn catalog__btn btn_withe">Получить каталог</button>
+      </form>
+    </div>
+    <img src="img/catalog-img.png" alt="">
+  </section>
+  <div class="container-center">
+    <section class="cert">
+      <h2 class="title title_medium text-center">Сертификаты</h2>
+      <div class="certificates certificates--desc">
+        <a class="certificates__link" href="certificates-pdj/1.pdf">
+          <img class="certificates__img" src="img/certificates/1.png" alt="">
+        </a>
+        <a class="certificates__link" href="certificates-pdj/2.pdf">
+          <img class="certificates__img" src="img/certificates/2.png" alt="">
+        </a>
+        <a class="certificates__link" href="certificates-pdj/3.pdf">
+          <img class="certificates__img" src="img/certificates/3.png" alt="">
+        </a>
+      </div>
+
+      <!-- slider -->
+      <div class="certificates cert__slider">
+        <a class="certificates__link" href="certificates-pdj/1.pdf">
+          <img class="certificates__img" src="img/certificates/1.png" alt="">
+        </a>
+        <a class="certificates__link" href="certificates-pdj/2.pdf">
+          <img class="certificates__img" src="img/certificates/2.png" alt="">
+        </a>
+        <a class="certificates__link" href="certificates-pdj/3.pdf">
+          <img class="certificates__img" src="img/certificates/3.png" alt="">
+        </a>
+      </div>
+
+      <div class="cert__counter">
+        <p class="cert__counter-text"><span class="cert__counter-current">1</span>/<span class="cert__counter-all">лол</span></p>
+      </div>
+
+    </section>
+  </div>
+  <div class="container-center">
+    <section id="contacts" class="contact-block">
+      <div>
+        <p class="text-center"><span class="text-grey">Телефон</span><br><a href="tel:+74956645737" class="text-black">8 495 664 57 37</a></p>
+      </div>
+      <div>
+        <p class="text-center"><span class="text-grey">Адрес</span><br>Москва, Кремлевская набережная, 8</p>
+      </div>
+      <div>
+        <p class="text-center text-center--last"><span class="text-grey">Почта</span><br><a href="mailto:komoda@ya.ru" class="text-black">komoda@ya.ru</a></p>
+      </div>
+    </section>
+  </div>
+
+  <section class="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A930eec61c1d0414c416f47df8847fd4105158558bde29d5e18f751e79301cc20&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+  </section>
+
+  <footer class="footer container-center_big bg-green">
+    <div class="container-center">
+      <div class="footer-inner">
+        <a href="#">
+          <img class="footer__logo" src="img/logo/logo-footer.png" alt="">
+        </a>
+  
+        <ul class="footer__nav">
+          <li class='footer__link'>
+            <a href="" class="text-white">О компании</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Преимущества</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Каталог</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Как заказать</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Отзывы</a>
+          </li>
+          <li class='footer__link'>
+            <a href="" class="text-white">Контакты</a>
+          </li>
+        </ul>
+        <a href="tel:+74956645737" class="footer__tel text-white"><p class="footer__tel--number">8 495 664 57 37</p></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="slick/slick/slick.js"></script>
+  <script src="materialize-css/dist/js/materialize.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
