@@ -1008,3 +1008,33 @@
         }
     }
 }
+@media screen and ( max-height: 930px  ) {
+    .quiz__block {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and ( max-height: 800px  ) {
+    .quiz__progress {
+        margin-bottom: 20px;
+    }
+    .quiz__radio {
+        margin-bottom: 50px;
+    }
+    .quiz .title_small {
+        margin-bottom: 20px;
+    }
+}
+@media screen and ( max-height: 700px  ) {
+    .quiz__radio {
+        margin-bottom: 20px;
+    }
+    .quiz__block {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .quiz {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}

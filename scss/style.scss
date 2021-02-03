@@ -750,7 +750,36 @@ svg path{
     grid-template-columns: repeat(9, 1fr);
     position: relative;
     grid-template-rows: 1fr;
+    // height: 100vh;
 
+    &--2 {
+        display: none;
+    }
+
+    &--3 {
+        display: none;
+    }
+    &--4 {
+        display: none;
+    }
+    &--5 {
+        display: none;
+    }
+    &--6 {
+        display: none;
+    }
+    &--7 {
+        display: none;
+    }
+    &--8 {
+        display: none;
+    }
+    &--9 {
+        display: none;
+    }
+    &--end {
+        display: none;
+    }
     & img {
         max-width: 100%;
         height: auto;
@@ -762,6 +791,9 @@ svg path{
         grid-column: 1 / 8;
         padding: 100px 0 120px 120px;
         max-width: 100%;
+        & .btn {
+            margin-top: 0;
+        }
     }
 
     &__bg {
@@ -853,6 +885,9 @@ svg path{
         display: block;
         max-width: 270px;
         position: relative;
+        &--active {
+            background: #12A89D;
+        }
 
         & span {
             width: 100%;
