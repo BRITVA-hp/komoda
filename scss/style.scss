@@ -756,7 +756,7 @@ svg path{
         display: none;
     }
 
-    &--3 {
+    &--1 {
         display: none;
     }
     &--4 {
@@ -1161,4 +1161,10 @@ svg path{
         bottom: -50px;
         display: none;
     }
+}
+.invalid {
+    color: tomato;
+}
+.catalog input[type=tel]:not(.browser-default) {
+    border-color: tomato;
 }

@@ -49,9 +49,9 @@
         <div>
           <h1 class="title title_big">Производство<br> шкафов купе<br> на заказ</h1>
           <h2 class="title title_subtitle text-green">Вызов замерщика бесплатно</h2>
-          <form action="#">
-            <input type="text" placeholder="Ваше имя">
-            <input type="tel" placeholder="Ваш телефон">
+          <form class="top-section__form" action="#">
+            <input name="topName" type="text" placeholder="Ваше имя">
+            <input name="topTel" type="tel" placeholder="Ваш телефон">
             <button class="btn btn_green">Вызвать замерщика</button>
           </form>
         </div>
@@ -354,7 +354,7 @@
         </a>
       </div>
       <form action="#" class="catalog__form">
-        <input class="catalog__tel" type="tel" placeholder="+7 (___) ___ - __ - __">
+        <input name="catalogTel" class="catalog__tel" type="tel" placeholder="+7 (___) ___ - __ - __">
         <button class="btn catalog__btn btn_withe">Получить каталог</button>
       </form>
     </div>
@@ -447,6 +447,8 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="slick/slick/slick.js"></script>
   <script src="materialize-css/dist/js/materialize.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

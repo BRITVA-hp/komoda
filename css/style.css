@@ -530,7 +530,7 @@ svg path {
   grid-template-rows: 1fr; }
   .quiz--2 {
     display: none; }
-  .quiz--3 {
+  .quiz--1 {
     display: none; }
   .quiz--4 {
     display: none; }
@@ -830,3 +830,9 @@ svg path {
   .comments__counter {
     bottom: -50px;
     display: none; }
+
+.invalid {
+  color: tomato; }
+
+.catalog input[type=tel]:not(.browser-default) {
+  border-color: tomato; }
