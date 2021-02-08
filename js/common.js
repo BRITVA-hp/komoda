@@ -98,36 +98,4 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault();
   });
 
-  // Валидация формы
-
-  $('.top-section__form').validate({
-    errorClass: "invalid",
-    rules: {
-      // simple rule, converted to {required:true}
-      topName: "required",
-      topTel: "required"
-    },
-    messages: {
-      topTel: "Телефон обязателен",
-      topName: "Имя обязательно"
-    }
-  });
-
-  //Маска
-  $('input[name="topTel"]').mask('+7 (000) 000-00-00');
-
-  $('.catalog__form').validate({
-    errorClass: "invalid",
-    rules: {
-      // simple rule, converted to {required:true}
-      catalogTel: "required"
-    },
-    messages: {
-      catalogTel: "Телефон обязателен"
-    }
-  });
-  $('input[name="catalogTel"]').mask('+7 (000) 000-00-00');
-
-  
-
 });

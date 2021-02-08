@@ -212,7 +212,7 @@
                 right: 19%;
             }
         }
-        & input:last-child {
+        & input[name="quizTel"] {
             width: 300px;
         }
     }
@@ -508,7 +508,7 @@
                 margin-bottom: 10px;
             }
         }
-        & input:last-child {
+        & input[name="quizTel"] {
             padding: 15px 25px;
         }
         &__img{
@@ -571,9 +571,15 @@
             }
         }
     }
+    .title-thanks {
+        max-width: 340px;
+    }
         
 }
 @media screen and ( max-width: 768px  ) {
+    .button-wrap {
+        justify-content: center;
+    }
     .comments {
         & .slick-slide {
             height: 350px;
@@ -719,6 +725,8 @@
             padding: 15px 0;
             &--end {
                 max-width: 270px;
+                display: block;
+                margin: auto;
             }
         }
         &__block {
@@ -728,13 +736,26 @@
         &__radio {
             grid-template-columns: 210px;
             &--end {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 padding-left: 0;
             }
         }
-        & input:last-child {
+        &__label--end {
+            margin: auto;
+        }
+        & input[name="quizTel"] {
             width: auto;
         }
+        &--end-input-group {
+            &__input {
+                margin: auto;
+            }
+            &__label {
+                margin: auto;
+                text-align: center;
+            }
+        }
+            
     }
     .btn__gray {
         margin-right: 7px;
@@ -748,14 +769,20 @@
             margin-bottom: 45px;
             &-end {
                 font-size: 18px;
+                text-align: center;
                 &>span {
                     font-size: 24px;
+                    margin: auto;
                 }
             }
         }
         &_subtitle {
             font-size: 18px;
             margin-bottom: 30px;
+        }
+        &-thanks {
+            margin: auto;
+            text-align: center;
         }
 
     }
@@ -766,6 +793,10 @@
     }
     .about {
         margin-bottom: 70px;
+    }
+    label.invalid {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 @media screen and ( max-width: 670px  ) {
@@ -797,6 +828,10 @@
     }
 }
 @media screen and ( max-width: 576px  ) {
+    label.invalid {
+        left: 20px;
+        transform: none;
+    }
     .comments {
         &__title {
             text-align: left;
@@ -977,7 +1012,7 @@
         &__progress {
             grid-template-columns: repeat(9, 1fr);
         }
-        & input:last-child {
+        & input[name="quizTel"] {
             display: block;
             width: 82%;
             margin: auto
@@ -1032,9 +1067,24 @@
     .quiz__block {
         padding-top: 20px;
         padding-bottom: 20px;
+        &--end {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        &--thanks {
+            grid-template-rows: 0.7fr 1fr 0.7fr;
+        }
     }
     .quiz {
         padding-top: 30px;
         padding-bottom: 20px;
+
+        &--end {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &-input-group {
+                margin-bottom: 30px;
+            }
+        }
     }
 }

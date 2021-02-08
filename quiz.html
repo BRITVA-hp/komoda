@@ -333,7 +333,7 @@
 
       <div class="quiz--end-input-group">
         <label class="quiz--end-input-group__label" for="tel">Забронируйте подарок, оставив свой номер телефона</label>
-        <input placeholder="+7 (___) ___ - __ - __" class="quiz--end-input-group__input" type="text" id="tel">
+        <input name="quizTel" placeholder="+7 (___) ___ - __ - __" class="quiz--end-input-group__input" type="text" id="tel">
       </div>
 
         <button class="btn quiz__btn btn_green quiz__btn--end">Получить подарок</button>
@@ -344,6 +344,22 @@
 
 </section>
 <!-- /.quiz quiz--9 -->
-  
+
+  <section class="quiz quiz--thanks">
+    <form class="quiz__block quiz__block--thanks">
+      <h3 class="title-thanks title_small">Спасибо за пройденный опрос! Мы обязательно с Вами свяжемся.</h3>
+      <div class="button-wrap"><button class="btn btn-thanks quiz__btn btn_green">ok</button></div>
+    </form>
+
+    <div class="quiz__bg"></div>
+    <div class="quiz__img"><img src="img/cupboard.png" alt="cupboard"></div>
+
+  </section>
+  <!-- /.quiz quiz--1 -->
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/quiz.js"></script>
 </body>
 </html>
