@@ -548,6 +548,15 @@ form{
     padding: 60px 0;
     position: relative;
     margin-bottom: 120px;
+    & [type="radio"]+span:before {
+        display: none;
+    }
+    & [type="radio"]+span:after {
+        display: none;
+    }
+    & [type="radio"]:checked+span {
+        padding-left: 0;
+    }
 
     img{
         max-width: 510px;
@@ -596,12 +605,34 @@ form{
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        & [type="radio"]:not(:checked)+span {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+        }
     }
     & [type="radio"]:not(:checked)+span {
         padding-left: 0;
     }
-    & input:checked + span {
-        background-color: red;
+    & input:checked + span {    
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff; 
+    }
+    & input:checked + span path {
+        fill: #12A89D;
     }
     & [type="radio"]:not(:checked)+span:before {
         display: none;
@@ -785,39 +816,45 @@ svg path{
     & [type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
         padding-left: 0;
     }
-    // &--1 {
-    //     display: none;
-    // }
-    // &--2 {
-    //     display: none;
-    // }
-    // &--3 {
-    //     display: none;
-    // }
-    // &--4 {
-    //     display: none;
-    // }
-    // &--5 {
-    //     display: none;
-    // }
-    // &--6 {
-    //     display: none;
-    // }
-    // &--7 {
-    //     display: none;
-    // }
-    // &--8 {
-    //     display: none;
-    // }
-    // &--9 {
-    //     display: none;
-    // }
-    // &--end {
-    //     display: none;
-    // }
-    // &--thanks {
-    //     display: none;
-    // }
+    & [type="radio"]:checked+span:before {
+        display: none;
+    }
+    & [type="radio"]:checked+span:after {
+        display: none;
+    }
+    &--1 {
+        display: none;
+    }
+    &--2 {
+        display: none;
+    }
+    &--3 {
+        display: none;
+    }
+    &--4 {
+        display: none;
+    }
+    &--5 {
+        display: none;
+    }
+    &--6 {
+        display: none;
+    }
+    &--7 {
+        display: none;
+    }
+    &--8 {
+        display: none;
+    }
+    &--9 {
+        display: none;
+    }
+    &--end {
+        display: none;
+    }
+    &--thanks {
+        display: none;
+    }
     & img {
         max-width: 100%;
         height: auto;
@@ -1237,6 +1274,9 @@ label.invalid {
     
 }
 .modal {
+    &-close {
+        color: #12A89D;
+    }
     & input[type=tel]:not(.browser-default) {
         margin-bottom: 70px;
         display: block;

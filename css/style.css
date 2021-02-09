@@ -391,6 +391,12 @@ form {
   padding: 60px 0;
   position: relative;
   margin-bottom: 120px; }
+  .catalog [type="radio"] + span:before {
+    display: none; }
+  .catalog [type="radio"] + span:after {
+    display: none; }
+  .catalog [type="radio"]:checked + span {
+    padding-left: 0; }
   .catalog img {
     max-width: 510px;
     width: 100%; }
@@ -420,11 +426,31 @@ form {
     margin-right: 5px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
+    .catalog label [type="radio"]:not(:checked) + span {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0; }
   .catalog [type="radio"]:not(:checked) + span {
     padding-left: 0; }
   .catalog input:checked + span {
-    background-color: red; }
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff; }
+  .catalog input:checked + span path {
+    fill: #12A89D; }
   .catalog [type="radio"]:not(:checked) + span:before {
     display: none; }
   .catalog [type="radio"]:not(:checked) + span:after {
@@ -554,6 +580,32 @@ svg path {
     display: none; }
   .quiz [type="radio"]:not(:checked) + span, .quiz [type="radio"]:checked + span {
     padding-left: 0; }
+  .quiz [type="radio"]:checked + span:before {
+    display: none; }
+  .quiz [type="radio"]:checked + span:after {
+    display: none; }
+  .quiz--1 {
+    display: none; }
+  .quiz--2 {
+    display: none; }
+  .quiz--3 {
+    display: none; }
+  .quiz--4 {
+    display: none; }
+  .quiz--5 {
+    display: none; }
+  .quiz--6 {
+    display: none; }
+  .quiz--7 {
+    display: none; }
+  .quiz--8 {
+    display: none; }
+  .quiz--9 {
+    display: none; }
+  .quiz--end {
+    display: none; }
+  .quiz--thanks {
+    display: none; }
   .quiz img {
     max-width: 100%;
     height: auto; }
@@ -870,6 +922,9 @@ label.invalid {
   display: block;
   padding: 15px 40px;
   cursor: pointer; }
+
+.modal-close {
+  color: #12A89D; }
 
 .modal input[type=tel]:not(.browser-default) {
   margin-bottom: 70px;
