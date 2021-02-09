@@ -287,9 +287,10 @@
   nav .brand-logo {
     left: 9%; }
   .quiz__label {
-    font-size: 18px;
-    line-height: 22px;
     height: 50px; }
+    .quiz__label span {
+      font-size: 18px !important;
+      line-height: 22px !important; }
     .quiz__label--end {
       width: 90px;
       min-height: 0;
@@ -485,7 +486,7 @@
     .quiz input[name="quizTel"] {
       width: auto; }
     .quiz--end-input-group__input {
-      margin: auto; }
+      margin: auto !important; }
     .quiz--end-input-group__label {
       margin: auto;
       text-align: center; }
@@ -498,7 +499,8 @@
     margin-bottom: 45px; }
     .title_small-end {
       font-size: 18px;
-      text-align: center; }
+      text-align: center;
+      margin: auto; }
       .title_small-end > span {
         font-size: 24px;
         margin: auto; }
@@ -538,6 +540,16 @@
     margin-bottom: 300px; } }
 
 @media screen and (max-width: 576px) {
+  .modal .modal-content {
+    padding: 20px; }
+  .modal__button {
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 100%; }
+  .modal label.invalid {
+    bottom: -30px;
+    left: 0;
+    transform: none; }
   label.invalid {
     left: 20px;
     transform: none; }
@@ -564,6 +576,8 @@
     .catalog .container-form {
       grid-row: 2/3;
       grid-column: auto; }
+    .catalog__form-input-wrap {
+      justify-content: space-between; }
   .about .title {
     text-align: left; }
   .footer {
@@ -663,7 +677,8 @@
     .quiz input[name="quizTel"] {
       display: block;
       width: 82%;
-      margin: auto; }
+      margin: auto;
+      padding: 8px 25px; }
     .quiz__label--end {
       margin: auto; }
     .quiz__btn {

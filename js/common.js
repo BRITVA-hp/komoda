@@ -98,4 +98,36 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault();
   });
 
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  //Маска и валидация телефона в модалке
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      modalTel: "required"
+    },
+    messages: {
+      modalTel: "Телефон обязателен"
+    }
+  });
+
+  //Маска
+  $('input[name="modalTel"]').mask('+7 (000) 000-00-00');
+
+  $('.quiz__block--end').validate({
+    errorClass: "invalid",
+    rules: {
+      quizTel: "required"
+    },
+    messages: {
+      quizTel: "Телефон обязателен"
+    }
+  });
+
+  //Маска
+  $('input[name="quizTel"]').mask('+7 (000) 000-00-00');
+
+
 });

@@ -455,8 +455,10 @@
         
     .quiz {
         &__label {
-            font-size: 18px;
-            line-height: 22px;
+            & span {
+                font-size: 18px !important;
+                line-height: 22px !important;
+            }
             height: 50px;
             &--end {
                 width: 90px;
@@ -748,7 +750,7 @@
         }
         &--end-input-group {
             &__input {
-                margin: auto;
+                margin: auto !important;
             }
             &__label {
                 margin: auto;
@@ -770,6 +772,7 @@
             &-end {
                 font-size: 18px;
                 text-align: center;
+                margin: auto;
                 &>span {
                     font-size: 24px;
                     margin: auto;
@@ -828,6 +831,21 @@
     }
 }
 @media screen and ( max-width: 576px  ) {
+    .modal {
+        & .modal-content {
+            padding: 20px;
+        }
+        &__button {
+            font-size: 18px;
+            padding: 10px 20px;
+            width: 100%;
+        }
+        & label.invalid {
+            bottom: -30px;
+            left: 0;
+            transform: none;
+        }
+    }
     label.invalid {
         left: 20px;
         transform: none;
@@ -866,6 +884,9 @@
         & .container-form {
             grid-row: 2/3;
             grid-column: auto;
+        }
+        &__form-input-wrap {
+            justify-content: space-between;
         }
     }
     .about {
@@ -1015,7 +1036,8 @@
         & input[name="quizTel"] {
             display: block;
             width: 82%;
-            margin: auto
+            margin: auto;
+            padding: 8px 25px;
         }
         &__label--end {
             margin: auto;

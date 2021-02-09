@@ -413,6 +413,22 @@ form {
     transform: translateY(-10%); }
   .catalog .title {
     margin: 0; }
+  .catalog label {
+    border: 2px solid #FFFFFF;
+    width: 54px;
+    height: 54px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .catalog [type="radio"]:not(:checked) + span {
+    padding-left: 0; }
+  .catalog input:checked + span {
+    background-color: red; }
+  .catalog [type="radio"]:not(:checked) + span:before {
+    display: none; }
+  .catalog [type="radio"]:not(:checked) + span:after {
+    display: none; }
 
 svg path {
   fill: #fff;
@@ -532,26 +548,12 @@ svg path {
   grid-template-columns: repeat(9, 1fr);
   position: relative;
   grid-template-rows: 1fr; }
-  .quiz--2 {
+  .quiz [type="radio"]:not(:checked) + span:before {
     display: none; }
-  .quiz--thanks {
+  .quiz [type="radio"]:not(:checked) + span:after {
     display: none; }
-  .quiz--3 {
-    display: none; }
-  .quiz--4 {
-    display: none; }
-  .quiz--5 {
-    display: none; }
-  .quiz--6 {
-    display: none; }
-  .quiz--7 {
-    display: none; }
-  .quiz--8 {
-    display: none; }
-  .quiz--9 {
-    display: none; }
-  .quiz--end {
-    display: none; }
+  .quiz [type="radio"]:not(:checked) + span, .quiz [type="radio"]:checked + span {
+    padding-left: 0; }
   .quiz img {
     max-width: 100%;
     height: auto; }
@@ -632,20 +634,26 @@ svg path {
     cursor: pointer;
     border: 1px solid #B6B6B6;
     height: 70px;
-    display: block;
+    display: flex;
+    align-items: center;
     max-width: 270px;
     position: relative; }
     .quiz__label--active {
       background: #12A89D; }
     .quiz__label span {
+      font-family: 'Proxima Nova Rg' !important;
+      font-style: normal !important;
+      font-weight: normal !important;
+      font-size: 24px !important;
+      line-height: 29px !important;
       width: 100%;
-      height: 100%;
+      height: 100% !important;
       position: absolute;
-      display: grid;
+      display: grid !important;
       left: 0;
       top: 0;
       text-align: center;
-      align-items: center; }
+      align-items: center !important; }
       .quiz__label span:hover {
         transition: 0.3s;
         background: #12A89D; }
@@ -656,7 +664,7 @@ svg path {
       border-radius: 24px;
       width: 160px; }
       .quiz__label--end > span {
-        display: flex;
+        display: flex !important;
         align-items: center;
         flex-direction: column;
         justify-content: center;
@@ -853,3 +861,42 @@ label.invalid {
   grid-row: 3/4;
   display: flex;
   align-items: flex-end; }
+
+.modal-trigger {
+  cursor: pointer; }
+
+.modal__button {
+  margin: auto;
+  display: block;
+  padding: 15px 40px;
+  cursor: pointer; }
+
+.modal input[type=tel]:not(.browser-default) {
+  margin-bottom: 70px;
+  display: block;
+  font-family: 'Proxima Nova Rg';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px; }
+
+.modal .modal-content {
+  padding: 50px; }
+
+.modal button:focus {
+  outline: none !important;
+  border: 2px solid transparent; }
+
+.modal__form {
+  width: 100%;
+  max-width: 100%; }
+  .modal__form label.invalid {
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.modal__input-group {
+  position: relative; }
+
+.catalog__form-input-wrap {
+  display: flex; }
