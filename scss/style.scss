@@ -1277,14 +1277,22 @@ label.invalid {
     &-close {
         color: #12A89D;
     }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
     & input[type=tel]:not(.browser-default) {
-        margin-bottom: 70px;
+        margin: auto;
+        margin-bottom: 40px;
         display: block;
         font-family: 'Proxima Nova Rg';
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
+        width: 50%;
     }
     & .modal-content {
         padding: 50px;

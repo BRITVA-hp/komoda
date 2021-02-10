@@ -108,7 +108,9 @@
   .top-section__img {
     width: 500px; }
   .link-tel {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .modal input[type=tel]:not(.browser-default) {
+    width: 100%; } }
 
 @media screen and (max-width: 1150px) {
   .comments__img img {
@@ -137,6 +139,8 @@
     height: 370px; } }
 
 @media screen and (max-width: 992px) {
+  .modal__header {
+    align-items: flex-start; }
   .cert__counter {
     display: block; }
   .cert__slider {
@@ -366,6 +370,15 @@
     max-width: 340px; } }
 
 @media screen and (max-width: 768px) {
+  .modal__header {
+    align-items: center; }
+  .modal__logo {
+    width: 100px; }
+    .modal__logo img {
+      max-width: 100%;
+      height: auto; }
+  .modal .modal-content {
+    padding: 20px; }
   .button-wrap {
     justify-content: center; }
   .comments .slick-slide {
@@ -696,36 +709,3 @@
     text-align: center; }
     .title_small-end > span {
       margin: auto; } }
-
-@media screen and (max-height: 930px) {
-  .quiz__block {
-    padding-top: 40px;
-    padding-bottom: 40px; } }
-
-@media screen and (max-height: 800px) {
-  .quiz__progress {
-    margin-bottom: 20px; }
-  .quiz__radio {
-    margin-bottom: 50px; }
-  .quiz .title_small {
-    margin-bottom: 20px; } }
-
-@media screen and (max-height: 700px) {
-  .quiz__radio {
-    margin-bottom: 20px; }
-  .quiz__block {
-    padding-top: 20px;
-    padding-bottom: 20px; }
-    .quiz__block--end {
-      padding-top: 10px;
-      padding-bottom: 10px; }
-    .quiz__block--thanks {
-      grid-template-rows: 0.7fr 1fr 0.7fr; }
-  .quiz {
-    padding-top: 30px;
-    padding-bottom: 20px; }
-    .quiz--end {
-      padding-top: 10px;
-      padding-bottom: 10px; }
-      .quiz--end-input-group {
-        margin-bottom: 30px; } }
